@@ -14,10 +14,10 @@ sum = sum * 10 + value
 ### Pushing a list of numbers
 
 ```js
-let sum = 0;
+
 let values = [2, 3, 4];
 
-values.forEach(value => sum = sum * 10 + value);
+values.reduce((a, b) => a * 10 + b);
 
 // sum will equal to '234'
 ```
